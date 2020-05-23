@@ -1,2 +1,5 @@
+*.box
 .vagrant
 *.vdi
+/packer
+/packer/packer_cache

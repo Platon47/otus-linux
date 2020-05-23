@@ -3,7 +3,7 @@
 
 MACHINES = {
   :otuslinux => {
-        :box_name => "centos-7-5",
+        :box_name => "centos/7",
         :ip_addr => '192.168.11.101',
 	:disks => {
 		:sata1 => {
@@ -25,6 +25,16 @@ MACHINES = {
                         :dfile => './sata4.vdi',
                         :size => 250, # Megabytes
                         :port => 4
+                },
+                :sata5 => {
+                        :dfile => './sata5.vdi',
+                        :size => 250,
+                        :port => 5
+                },
+                :sata6 => {
+                        :dfile => './sata6.vdi',
+                        :size => 250,
+                        :port => 6
                 }
 
 	}
