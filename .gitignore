@@ -1,5 +1,4 @@
 *.box
-Homework_01/packer
 .vagrant
 Homework_02/Vagrantfile_rezerv
 *.iso
