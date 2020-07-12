@@ -149,5 +149,28 @@ otus/hometask2  compression  zle        inherited from otus
 
 otus/hometask2  checksum     sha256     inherited from otus
 
+Найти сообщение от преподавателей
+---------------------------------
 
+Заливаем файл на нашу виртуальную машину:
+
+vagrant upload /home/admin/cert/otus_task2.file
+
+Удаляем ранее импортированный пул, т.к. он доступен только для чтения:
+
+zpool destroy otus -f
+
+Создаём новый zpool:
+
+zpool create otus sdb sdc
+
+Восстанавливаем локально снепшот:
+
+zfs receive otus/storage@task2 < otus_task2.file
+
+Сообщение в файле secret_message:
+
+cat /otus/storage/task1/file_mess/secret_message 
+
+https://github.com/sindresorhus/awesome
 
