@@ -5,16 +5,26 @@
 sudo cat /etc/redhat-release
 CentOS Linux release 7.5.1804 (Core) 
 
+
 Добавляем репозиторий для нашей версии:
+
+
 sudo yum install http://download.zfsonlinux.org/epel/zfs-release.el7_5.noarch.rpm
 
 Installed:
   zfs-release.noarch 0:1-5.el7.centos                                                                                                                                                                                
 Complete!
 
+
 sudo gpg --quiet --with-fingerprint /etc/pki/rpm-gpg/RPM-GPG-KEY-zfsonlinux
+
+
 sudo yum-config-manager --enable zfs-kmod
+
+
 sudo yum-config-manager --disable zfs
+
+
 
 Убеждаемся что у нас выключен DKMS и включен KMOD
 sudo cat /etc/yum.repos.d/zfs.repo
