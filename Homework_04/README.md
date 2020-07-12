@@ -95,14 +95,32 @@ wget -O War_and_Peace.txt http://www.gutenberg.org/ebooks/2600.txt.utf-8
 
 
 sudo  zfs get -r compression,compressratio
+
+
 NAME      PROPERTY       VALUE     SOURCE
+
+
 gzippool  compression    gzip      local
+
+
 gzippool  compressratio  1.08x     -
+
+
 lz4pool   compression    lz4       local
+
+
 lz4pool   compressratio  1.08x     -
+
+
 lzjbpool  compression    lzjb      local
+
+
 lzjbpool  compressratio  1.07x     -
+
+
 zlepool   compression    zle       local
+
+
 zlepool   compressratio  1.08x     -
 
 
