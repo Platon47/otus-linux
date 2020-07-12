@@ -66,8 +66,14 @@ sudo lsmod | grep zfs
 
 
 sudo zpool create gzippool mirror sdb sdc
+
+
 sudo zpool create lz4pool mirror sdd sde
+
+
 sudo zpool create lzjbpool mirror sdf sdg
+
+
 sudo zpool create zlepoo mirror sdh sdi
 
 
