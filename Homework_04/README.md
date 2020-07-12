@@ -112,7 +112,9 @@ zpool import -o readonly=on -d ${PWD}/zpoolexport/ otus
 Размер хранилища:
 
 zpool list -o name,size
+
 NAME   SIZE
+
 otus   480M
 
 Тип пула - mirror-0:
@@ -132,12 +134,20 @@ config:
 Значения recordsize,compression,checksum:
 
 zfs get recordsize,compression,checksum
+
 NAME            PROPERTY     VALUE      SOURCE
+
 otus            recordsize   128K       local
+
 otus            compression  zle        local
+
 otus            checksum     sha256     local
+
 otus/hometask2  recordsize   128K       inherited from otus
+
 otus/hometask2  compression  zle        inherited from otus
+
 otus/hometask2  checksum     sha256     inherited from otus
+
 
 
