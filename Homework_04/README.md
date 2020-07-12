@@ -75,6 +75,8 @@ sudo zpool create zlepoo mirror sdh sdi
 
 
 sudo zfs set compression=gzip gzippool
+
+
 sudo zfs set compression=lz4 lz4pool
 sudo zfs set compression=lzjb lzjbpool
 sudo zfs set compression=zle zlepool 
